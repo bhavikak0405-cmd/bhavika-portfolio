@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Contact Mohamed Arsath for projects, collaboration and opportunities.">
+
+    <meta name="author"
+        content="Mohamed Arsath">
+
+    <title>Contact | Mohamed Arsath</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <nav class="navbar"
+            aria-label="Main navigation">
+
+            <a href="index.html"
+                class="logo"
+                aria-label="Mohamed Arsath Home">
+                MA<span>.</span>
+            </a>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html"
+                        aria-current="page">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="contact-hero"
+            aria-labelledby="contact-title">
+
+            <p class="eyebrow">
+                GET IN TOUCH
+            </p>
+
+            <h1 id="contact-title">
+                Let's build something
+                <span>great.</span>
+            </h1>
+
+            <p>
+                Have an idea, project or opportunity?
+                Send me a message.
+            </p>
+
+        </section>
+
+
+        <section class="contact-section">
+
+            <div class="contact-info">
+
+                <p class="eyebrow">
+                    CONTACT
+                </p>
+
+                <h2>
+                    Let's start a
+                    <span>conversation.</span>
+                </h2>
+
+                <p>
+                    I'm always interested in learning,
+                    collaborating and working on interesting
+                    technology projects.
+                </p>
+
+                <div class="contact-detail">
+
+                    <strong>Email</strong>
+
+                    <a href="mailto:mohamedarsath200714@gmail.com">
+                        mohamedarsath200714@gmail.com
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-form-container">
+
+                <form
+                    id="contactForm"
+                    class="contact-form"
+                    action="#"
+                    method="post"
+                    aria-label="Contact form">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Your Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            autocomplete="name"
+                            required
+                            aria-required="true">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            required
+                            aria-required="true">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="subject">
+                            Subject
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            required
+                            aria-required="true">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Your Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            required
+                            aria-required="true"></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary">
+
+                        Send Message →
+
+                    </button>
+                    <p  id="successMessage"
+                        role="status"
+                        aria-live="polite"
+                        hidden>
+                            ✓ Message sent successfully!
+                            Thank you for contacting Mohamed Arsath.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <p>
+            © 2026 Mohamed Arsath. All rights reserved.
+        </p>
+
+    </footer>
+    <script>
+    const contactForm = document.getElementById("contactForm");
+    const successMessage = document.getElementById("successMessage");
+
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        successMessage.hidden = false;
+
+        contactForm.reset();
+    });
+</script>
+
+</body>
+
+</html>
